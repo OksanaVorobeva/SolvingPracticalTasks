@@ -1,4 +1,4 @@
-package com.exampl;
+package com.exampl.taskGuru;
 
 public class TaskCurse {
     public static void main(String[] args) {
