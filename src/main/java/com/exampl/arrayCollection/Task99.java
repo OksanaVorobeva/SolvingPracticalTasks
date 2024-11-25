@@ -57,7 +57,7 @@ public class Task99 {
     }
 }
 
-class Melon implements Comparator<Melon> {
+class Melon implements Comparator<Melon> ,Comparable{
     private final String type;
     private final int weight;
 
@@ -88,6 +88,12 @@ class Melon implements Comparator<Melon> {
     }
 
     @Override
+    public int compareTo(Object o) {
+        Melon melon = (Melon) o;
+        return Integer.compare(this.weight, melon.getWeight());
+    }
+
+    @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -99,5 +105,7 @@ class Melon implements Comparator<Melon> {
     public int hashCode() {
         return Objects.hash(type, weight);
     }
+
+
 }
 
