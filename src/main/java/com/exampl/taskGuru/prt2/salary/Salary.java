@@ -1,4 +1,4 @@
-package com.exampl.taskGuru;
+package com.exampl.taskGuru.prt2.salary;
 
 
 public interface Salary {

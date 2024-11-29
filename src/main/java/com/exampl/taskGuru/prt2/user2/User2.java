@@ -1,4 +1,4 @@
-package com.exampl.taskGuru.user2;
+package com.exampl.taskGuru.prt2.user2;
 
  abstract class User2 {
      String name;
@@ -47,5 +47,9 @@ class Person extends Student2 {
         this.salary = salary;
     }
 
-
+    @Override
+    int gerIncome(int grand) {
+        return super.gerIncome(grand+getSalary());
+    }
 }
+
